@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello, world!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <!-- <link rel="icon" href="img/favicon.png"> -->
+  <link rel="stylesheet" href="scss/main.scss">
+</head>
+<title>Studbud</title>
+</head>
+
+<body>
+  <div class="grid-container2">
+    <nav>
+    <div class="Nav-and-photo">
+      <h2>STUDBUD</h2>
+      <ul>
+        <li><a href="index.html">Task</a></li>
+        <li><a href= "Content.html">Content</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="Studbud-name-and-photo"></div>
+    <div class="Footer"></div>
+    <div class="Tasklist">
+      Task
+      <form id="taskform">
+        <label for="task">Task:</label>
+        <input type="text" name="task" id="taskInput">
+  
+        <br>
+      <!-- Date input -->
+        <label for="dueDate">Due Date: </label>
+        <input type="date" name="dueDate" id="dueDateInput">
+        <br>
+      <!-- Time input -->
+      <label for="completionTime">Completion Time: </label>
+        <input type="time" name="completionTime" id="completionTimeInput">
+  
+        <br>
+  
+      <label for="estimatedTime">Estimated completion time (in mins):</label>
+      <input type="number" name="estimatedTime" id="estimatedTimeInput">
+      <!-- Priority -->
+      <br>
+  
+      <label for="priority">Task Priority:</label>
+      <select name="prority" id="priorityInput">
+        <option value="">Select one</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+  
+      <br>
+  
+        <button type="submit">Submit</button>
+      </form>
+      <ul id="tasklist">
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
