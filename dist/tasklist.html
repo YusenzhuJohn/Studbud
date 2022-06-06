@@ -25,7 +25,7 @@
     <div class="Studbud-name-and-photo"></div>
     <div class="Footer"></div>
     <div class="Tasklist">
-      Task
+      
       <form id="taskform">
         <label for="task">Task:</label>
         <input type="text" name="task" id="taskInput">
@@ -49,6 +49,7 @@
       <label for="priority">Task Priority:</label>
       <select name="prority" id="priorityInput">
         <option value="">Select one</option>
+        <option value="free">Free</option>
         <option value="Low">Low</option>
         <option value="Medium">Medium</option>
         <option value="High">High</option>
@@ -59,6 +60,7 @@
         <button type="submit">Submit</button>
       </form>
       <ul id="tasklist">
+        <p id="emptyList">Waiting to add</p>
       </ul>
     </div>
   </div>

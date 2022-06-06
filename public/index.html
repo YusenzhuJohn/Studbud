@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hello, world!</title>
+  <title>Studbud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
@@ -12,48 +13,118 @@
 </head>
 
 <body>
-  <div class="grid-container">
-    <nav>
-    <div class="Nav-and-photo">
-      <h2>STUDBUD</h2>
-      <ul>
-        <li><a href="index.html">Task</a></li>
-        <li><a href= "Content.html">Content</a></li>
-      </ul>
-    </div>
-  </nav>
-    <div class="Studbud-name-and-photo">
-      <a href="tasklist.html"><button class="button">Create task</button></a>
-    </div>
-    <div class="Urgent">
-      <h2>Urgent</h2>
-      <ul>
+  <div id="root" class="grid-container">
+    <!-- Header -->
+    <header class="header">
+      <h2>Studbud</h2>
+    </header>
 
-      </ul>
-    </div>
-    <div class="Not-urgent">
-      <h2>Not-urgent</h2>
-      <ul>
+    <!-- Navigation -->
+    <nav class="nav">
+      <!-- Internal nav container for sticky positioning -->
+      <div class="nav-container">
         
-      </ul>
-    </div>
-    <div class="Important">
-      <h2>Important</h2>
-      <ul>
+        <ul>
+          <!-- Nav items for current and potential future pages -->
+          <li class="active"><a href="index.html">Tasks</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Timer</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="content">
+      <!-- modal -->
+    <div class="modal" id="todo_form">
+      <div class="header">
+        <div class="title">Add task</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+      <div class="body">
         
-      </ul>
+        Task name<input type="text" id="todo_input" />
+        <br>Duedate<input type="date"  id="duedate_input"/>
+        <br>Completion time<input type="time"  id="completionTime_input">
+        <br>Estimate time<input type="number"  id="estimatedTime_input">
+        <br>Task Priority<select  id="priority_input">
+          <option value="">Select one</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+      </select>
+
+        <input type="submit" value="Add Todo" id="todo_submit" />
+      </div>
     </div>
-    <div class="Not-important">
-      <h2>Not-important</h2>
-      <ul>
-        
-      </ul>
-    </div>
-    <div class="Footer">
-      yzhu4495
+    <!-- todo -->
+    <div class="todo-container">
+      <div class="status" id="no_status">
+
+        <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
+        <div class="todo" draggable="true">
+          <a>Task example</a>
+          <span class="close">&times;</span>
+        </div>
+      </div>
+      <div class="status">
+        <h3>To do list</h3>
+      </div>
+      <div class="status">
+        <h3>In Progress</h3>
+      </div>
+      <div class="status">
+        <h3>Completed</h3>
+      </div>
     </div>
 
+    <div id="overlay"></div>
+    </main>
+
+    <!-- Aside -->
+    <aside class="aside" id="aside">
+      <div class="aside-container">
+        <h1>Pomodro with clock</h1>
+        <div class="clock">
+          <div class="mins">0</div>
+          <div>:</div>
+          <div clss="secs">00</div> 
+          <audio src="/public/music/clock.mp3">
+
+          </audio>
+          <svg class="progress-ring" heigth="120" width="120">
+          <circle
+           class="progress-ring_circle"
+           stroke-width="8"
+           fill="transparent"
+           r="50"
+           cx="60"
+           cy="60" 
+           />
+        </svg>
+        </div>
+        <div class="btn-group">
+         <button class="start">start focus</button>
+         <button class="reset">reset</button>
+         <button class="pause">pause</button>
+        </div>
+
+         <form action=".">
+           <input type="number" value="1" id="focusTime/>
+           <input type="number" value="1" id="breakTime/>
+         </form>
+        
+      </div>
+    </aside> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>yzhu4495</a>.</p>
+    </footer>
   </div>
+
+  <script src="script.js"></script>
+  <script src="script.js"></script>
   <script src="script.js"></script>
 </body>
 
