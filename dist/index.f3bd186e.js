@@ -1,11 +1,13 @@
-// board js
+// I learned this board js creation from youtube: https://youtu.be/m3StLl-H4CY
 const todos = document.querySelectorAll(".todo");
 const all_status = document.querySelectorAll(".status");
 let draggableTodo = null;
+// to achieve drag content of todo list to another column
 todos.forEach((todo)=>{
     todo.addEventListener("dragstart", dragStart);
     todo.addEventListener("dragend", dragEnd);
 });
+//
 function dragStart() {
     draggableTodo = this;
     setTimeout(()=>{
@@ -46,12 +48,14 @@ function dragDrop() {
 /* modal */ const btns = document.querySelectorAll("[data-target-modal]");
 const close_modals = document.querySelectorAll(".close-modal");
 const overlay = document.getElementById("overlay");
+//choose the languange in html
 btns.forEach((btn)=>{
     btn.addEventListener("click", ()=>{
         document.querySelector(btn.dataset.targetModal).classList.add("active");
         overlay.classList.add("active");
     });
 });
+//close the task 
 close_modals.forEach((btn)=>{
     btn.addEventListener("click", ()=>{
         const modal = btn.closest(".modal");
@@ -68,6 +72,7 @@ window.onclick = (event)=>{
 };
 /* create todo  */ const todo_submit = document.getElementById("todo_submit");
 todo_submit.addEventListener("click", createTodo);
+//task name, duedate, completiontime, estimatetime and priority.The tasklist code leanred from DECO2017 week 5
 function createTodo() {
     const todo_div = document.createElement("div");
     const input_val = document.getElementById("todo_input").value;
@@ -75,6 +80,7 @@ function createTodo() {
     const input_val3 = document.getElementById("completionTime_input").value;
     const input_val4 = document.getElementById("estimatedTime_input").value;
     const input_val5 = document.getElementById("priority_input").value;
+    //eable the conent show in the console log.
     const txt = document.createTextNode(input_val);
     const dte = document.createTextNode(input_val2);
     const ct = document.createTextNode(input_val3);

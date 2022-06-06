@@ -3,7 +3,7 @@ body {
   height: 80vh;
   padding: 35px;
 
-  background: rgb(243, 243, 243);
+  background-color: rgb(255, 194, 113);;
   color: #9d9a9a;
   font-family: "Montserrat", sans-serif;
 }
@@ -15,14 +15,14 @@ aside{
 }
 
 h1 {
-  font-weight: 900;
-  font-size: 58px;
+  font-size: 48px;
   text-align: center;
+  color: #ffffff;
 }
 
 h2 {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 38px;
   text-align: center;
 }
 
@@ -49,7 +49,7 @@ button {
   color: #ffffff;
 }
 label {
-  font-size: 12px;
+  font-size: 10px;
 }
 form {
   height: 20%;
