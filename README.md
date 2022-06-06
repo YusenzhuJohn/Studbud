@@ -16,6 +16,11 @@ Improvements from tut
 
 code improvement 
 I combined what I learned from youtube with Week 5 tasklist and get a good reflection:https://youtu.be/m3StLl-H4CY
+
+
+
+
+
 /* create todo  */
 const todo_submit = document.getElementById("todo_submit");
 todo_submit.addEventListener("click", createTodo);
@@ -28,8 +33,6 @@ function createTodo() {
   const input_val3 = document.getElementById("completionTime_input").value;
   const input_val4 = document.getElementById("estimatedTime_input").value;
   const input_val5 = document.getElementById("priority_input").value;
-
-
 
 //eable the conent show in the console log.
   const txt = document.createTextNode(input_val);
@@ -47,6 +50,8 @@ function createTodo() {
   console.log(todo_div)
   todo_div.classList.add("todo");
   todo_div.setAttribute("draggable", "true");
+  
+  
   
   
   This is picture showing the task
