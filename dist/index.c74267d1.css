@@ -5,7 +5,7 @@ body {
 ul {
   width: 15%;
   height: 100%;
-  background-color: #f1f1f1;
+  background-color: #d2cccc;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -221,6 +221,140 @@ body {
   background-color: #ff9012;
   border: none;
   font-size: 1.25rem;
+}
+
+body {
+  height: 80vh;
+  color: #9d9a9a;
+  background: #f3f3f3;
+  padding: 35px;
+  font-family: Montserrat, sans-serif;
+}
+
+aside {
+  background-color: bisque;
+  padding: 20px;
+  box-shadow: 0 0 0 1px #ffb05c1a;
+}
+
+h1 {
+  text-align: center;
+  font-size: 58px;
+  font-weight: 900;
+}
+
+h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+input {
+  background: #0000001c;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  transition: all .5s ease-in-out;
+}
+
+.btn-group {
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0;
+  display: flex;
+}
+
+button {
+  color: #fff;
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  font-size: 18px;
+  transition: all .5s ease-in-out;
+}
+
+label {
+  font-size: 12px;
+}
+
+form {
+  height: 20%;
+  max-width: 370px;
+  flex-direction: column;
+  margin: 5px auto;
+  padding: 0;
+  display: flex;
+}
+
+form button {
+  width: 100%;
+  color: #fff;
+  background: #1943ff;
+  margin: 5px 0;
+}
+
+.start {
+  color: #fff;
+  background: #ff8400;
+}
+
+.break {
+  color: #fff;
+  background: #e6c400;
+}
+
+.reset {
+  color: #fff;
+  background: #5c41f5;
+}
+
+.pause {
+  color: #fff;
+  background: #fd8f11;
+}
+
+.resume {
+  color: #fff;
+  background: #830afc;
+}
+
+.clock {
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+}
+
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.walker {
+  transform-origin: 50%;
+  stroke: #fff;
+  transition: all .5s;
+  transform: rotate(-90deg);
+}
+
+footer {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 4px;
+}
+
+.danger {
+  stroke: #f3111c;
+  animation: pulse .9s ease-in-out infinite;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */

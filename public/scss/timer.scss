@@ -1,0 +1,123 @@
+
+body {
+  height: 80vh;
+  padding: 35px;
+
+  background: rgb(243, 243, 243);
+  color: #9d9a9a;
+  font-family: "Montserrat", sans-serif;
+}
+
+aside{
+  background-color: bisque;
+  padding:20px;
+  box-shadow: rgba(255, 176, 92, 0.1) 0px 0px 0px 1px,
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 58px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
+input {
+  transition: 0.5s ease-in-out;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  border: none;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin: 35px 0;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  color: #ffffff;
+}
+label {
+  font-size: 12px;
+}
+form {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 370px;
+  margin: 5px auto;
+}
+form button {
+  background: rgb(25, 67, 255);
+  width: 100%;
+  margin: 5px 0;
+  color: white;
+}
+.start {
+  background: rgb(255, 132, 0);
+  color: white;
+}
+.break {
+  background: rgb(230, 196, 0);
+  color: white;
+}
+.reset {
+  background: rgb(92, 65, 245);
+  color: white;
+}
+.pause {
+  background: rgb(253, 143, 17);
+  color: white;
+}
+.resume {
+  background: rgb(131, 10, 252);
+  color: white;
+}
+.clock {
+  padding: 3px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 30%;
+  font-size: 24px;
+}
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.walker {
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: rgb(255, 255, 255);
+}
+
+footer {
+  position: fixed;
+  bottom: 4px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.danger {
+  stroke: rgb(243, 17, 28);
+  animation: pulse 0.9s ease-in-out infinite;
+}

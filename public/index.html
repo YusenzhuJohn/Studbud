@@ -16,7 +16,7 @@
   <div id="root" class="grid-container">
     <!-- Header -->
     <header class="header">
-      <h2>Studbud</h2>
+      <h1>Studbud</h1>
     </header>
 
     <!-- Navigation -->
@@ -27,7 +27,7 @@
         <ul>
           <!-- Nav items for current and potential future pages -->
           <li class="active"><a href="index.html">Tasks</a></li>
-          <li><a href="#">Music</a></li>
+          <li><a href="#">Content</a></li>
           <li><a href="#">Timer</a></li>
         </ul>
       </div>
@@ -42,7 +42,7 @@
         <button class="btn close-modal">&times;</button>
       </div>
       <div class="body">
-        
+        <!-- make task -->
         Task name<input type="text" id="todo_input" />
         <br>Duedate<input type="date"  id="duedate_input"/>
         <br>Completion time<input type="time"  id="completionTime_input">
@@ -60,7 +60,7 @@
     <!-- todo -->
     <div class="todo-container">
       <div class="status" id="no_status">
-
+  <!-- title of board -->
         <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
         <div class="todo" draggable="true">
           <a>Task example</a>
@@ -84,48 +84,61 @@
     <!-- Aside -->
     <aside class="aside" id="aside">
       <div class="aside-container">
-        <h1>Pomodro with clock</h1>
-        <div class="clock">
+        <h2>Pomodro</h2>
+    
+        <figure class="clock">
           <div class="mins">0</div>
           <div>:</div>
-          <div clss="secs">00</div> 
-          <audio src="/public/music/clock.mp3">
-
-          </audio>
-          <svg class="progress-ring" heigth="120" width="120">
-          <circle
-           class="progress-ring_circle"
-           stroke-width="8"
-           fill="transparent"
-           r="50"
-           cx="60"
-           cy="60" 
-           />
-        </svg>
-        </div>
+          <div class="secs">00</div>
+          <audio
+            src="/public/music/clock.mp3"
+          ></audio>
+          <svg class="progress-ring" height="120" width="120">
+            <circle
+              class="walker"
+              stroke-width="8"
+              fill="transparent"
+              r="50"
+              cx="60"
+              cy="60"
+            />
+          </svg>
+        </figure>
+    <!-- the button to make clock walk -->
         <div class="btn-group">
-         <button class="start">start focus</button>
-         <button class="reset">reset</button>
-         <button class="pause">pause</button>
+          <button class="start">Start</button>
+          <button class="reset">reset</button>
+          <button class="pause">pause</button>
         </div>
+    <!-- settings of promodoro -->
+        <form action=".">
+          <label for="focusTime">Study Time</label>
+          <input type="number" value="1" id="focusTime" />
+          <label for="breakTime">Break Time</label>
+          <input type="number" value="1" id="breakTime" />
+          <button type="submit">Save settings</button>
+        </form>
 
-         <form action=".">
-           <input type="number" value="1" id="focusTime/>
-           <input type="number" value="1" id="breakTime/>
-         </form>
-        
+        </div>
       </div>
-    </aside> -->
+    </aside>
 
     <!-- Footer -->
     <footer class="footer">
+      <audio controls>
+        <source src="/public/music/sunny.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
       <p>yzhu4495</a>.</p>
     </footer>
   </div>
 
   <script src="script.js"></script>
-  <script src="script.js"></script>
-  <script src="script.js"></script>
+  <script src="/public/js/setting.js"></script>
+  <script src="/public/js/Walker.js"></script>
+  <script src="/public/js/timer.js"></script>
+
 </body>
 
 </html>
