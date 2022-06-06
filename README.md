@@ -93,6 +93,27 @@ There have three music in the web, if you want listen more music you can click t
 
 
 
+
+
+
+
+
+
+Dictionary
+It is functional
+
+
+
+<img width="810" alt="截屏2022-06-06 下午9 56 50" src="https://user-images.githubusercontent.com/100390021/172175113-8971f25c-12d9-4ccc-89ba-dc0e2865c18c.png">
+
+
+
+
+
+
+
+
+
 Reference code was show in the File.
 
 
