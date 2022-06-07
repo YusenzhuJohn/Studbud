@@ -14,7 +14,8 @@
     display: flex;
   }
   
-  .status {
+  
+  .column {
     width: 45%;
     background-color: #f3f3f3;
     position: relative;
@@ -25,7 +26,7 @@
   }
 
   //column 1
-  .status:nth-child(1){
+  .column:nth-child(1){
     width: 200px;
     background-color: #cf8b8b;
     position: relative;
@@ -37,20 +38,20 @@
   }
 
   //column 2
-  .status:nth-child(2) {
+  .column:nth-child(2) {
     background-color: #e9e9e96b;
     box-shadow: rgba(255, 176, 92, 0.1) 0px 0px 0px 1px,;
     
   }
   //column 3
-  .status:nth-child(3) {
+  .column:nth-child(3) {
     background-color: #e9e9e96b;
     box-shadow: rgba(255, 176, 92, 0.1) 0px 0px 0px 1px,;
     
 
   }
   //column 4
-  .status:nth-child(4) {
+  .column:nth-child(4) {
     background-color: #e9e9e96b;
     box-shadow: rgba(255, 176, 92, 0.1) 0px 0px 0px 1px,;
     
@@ -58,7 +59,7 @@
   }
   
 
-  .status h3 {
+  .column h3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -118,18 +119,18 @@
     color: #343444;
   }
   
-  /* modal */
+  /* create */
   
-  .close-modal {
+  .close-create {
     background: none;
     border: none;
     font-size: 1.5rem;
   }
   
-  .modal {
+  .create {
     width: 450px;
     position: fixed;
-    top: -30%;
+    top: -40%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: top 0.3s ease-in-out;
@@ -140,11 +141,11 @@
     
   }
   
-  .modal.active {
+  .create.active {
     top: 35%;
   }
   
-  .modal .header {
+  .create .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,10 +154,11 @@
     background-color: rgba(0, 0, 0, 0.05);
   }
   
-  .modal .body {
+  .create .body {
     padding: 0.75rem;
   }
   
+  // Leaned from  https://www.youtube.com/watch?v=m3StLl-H4CY
   #overlay {
     display: none;
     position: fixed;

@@ -1,8 +1,8 @@
-//I learned this simple dictionary structure from https://codepen.io/yoyo/pen/LYPmvPo
-const txtBox = document.querySelector(".txtBox");
-const form = document.querySelector(".searchForm");
-const searchWord = document.querySelector(".search-word");
-const description = document.querySelector(".description");
+const input = document.querySelector(".input");
+const list = document.querySelector(".inputlist");
+const Word = document.querySelector(".word");
+const definition = document.querySelector(".definition");
+// Following code I learned form this website  https://codepen.io/yoyo/pen/LYPmvPo
 const dictionaryJson = "https://raw.githubusercontent.com/adambom/dictionary/master/dictionary.json";
 function searchDict(e) {
     e.preventDefault();
@@ -10,19 +10,19 @@ function searchDict(e) {
         return response.json();
     }).then(function(data) {
         e.preventDefault;
-        let word = txtBox.value;
-        console.log(txtBox.value);
+        let word = input.value;
+        console.log(input.value);
         let searchKeyword = word.toUpperCase();
         Object.keys(data).forEach(function(key) {
             if (key === searchKeyword) {
-                searchWord.innerHTML = searchKeyword;
-                if (searchKeyword === data[key]) description.innerHTML = "Not found";
-                else description.innerHTML = data[key];
+                Word.innerHTML = searchKeyword;
+                if (searchKeyword === data[key]) definition.innerHTML = "Not found";
+                else definition.innerHTML = data[key];
                 console.log(data[key]);
             }
         });
     });
 }
-form.addEventListener("submit", searchDict);
+list.addEventListener("submit", searchDict);
 
 //# sourceMappingURL=dictionary.1c9824cb.js.map
